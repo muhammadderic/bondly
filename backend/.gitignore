@@ -1,0 +1,56 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+/Include
+/Lib
+/Scripts
+pyvenv.cfg
+
+# Django secret and environment variables
+.env
+
+# Database files
+db.sqlite3
+*.sqlite3
+
+# Migrations (if you don't want to include initial migrations)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Static files (collected files)
+staticfiles/
+static/
+
+# Media files (user uploads)
+media/
+
+# Cache files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+
+# IDE and editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# MacOS and system-specific files
+.DS_Store
+Thumbs.db
+
+# Python dependency files
+pip-log.txt
+pip-delete-this-directory.txt
