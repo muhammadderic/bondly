@@ -2,7 +2,8 @@ from django.shortcuts import redirect, render
 from .models import Post
 
 def home(request):
-  return render(request, 'home.html')
+  post_list = Post.objects.all()
+  return render(request, 'home.html', {'post_list': post_list})
 
 def add_post(request):
   if (request.method == 'POST'):

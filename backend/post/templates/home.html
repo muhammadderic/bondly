@@ -19,10 +19,11 @@
       </thead>
 
       <tbody>
+        {% for post_item in post_list %}
         <tr>
-          <td>A1B2</td>
-          <td>Post title</td>
-          <td>This is a post content</td>
+          <td>{{ post_item.post_id }}</td>
+          <td>{{ post_item.title }}</td>
+          <td>{{ post_item.content }}</td>
           <td>
             <a href="">
               <button id="up">Update</button>
@@ -34,6 +35,11 @@
             </a>
           </td>
         </tr>
+        {% empty %}
+        <tr>
+          <td>Posts not found.</td>
+        </tr>
+        {% endfor %}
       </tbody>
     </table>
 
