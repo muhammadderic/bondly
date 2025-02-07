@@ -25,12 +25,13 @@
           <td>{{ post_item.title }}</td>
           <td>{{ post_item.content }}</td>
           <td>
-            <a href="">
+            <a href="{% url 'update_post' post_item.post_id %}">
               <button id="up">Update</button>
             </a>
           </td>
           <td>
-            <a href="">
+            <a href="{% url 'delete_post' post_item.post_id %}"
+              onclick="return confirm('Are you sure you want to delete this post?')">
               <button id="del">Delete</button>
             </a>
           </td>
