@@ -8,8 +8,11 @@
   <title>Bondly</title>
 </head>
 
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 <body>
-  <div>
+  <div class="container2">
     <h1>Update Post</h1>
 
     {% if error_message %}

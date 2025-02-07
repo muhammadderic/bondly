@@ -7,10 +7,13 @@
   <title>Bondly</title>
 </head>
 
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 <body>
-  <div>
+  <div class="container">
     <h1>Post Table</h1>
-    <table id="customers" border="1">
+    <table id="post" border="1">
       <thead>
         <th>Post Id</th>
         <th>Title</th>
@@ -47,7 +50,7 @@
     <br><br>
 
     <a href="{% url 'add_post' %}">
-      <button id="new">Add Post</button>
+      <button id="new3">Add Post</button>
     </a>
   </div>
 </body>

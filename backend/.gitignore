@@ -21,7 +21,6 @@ migrations/__pycache__/
 
 # Static files (collected files)
 staticfiles/
-static/
 
 # Media files (user uploads)
 media/
